@@ -28,11 +28,14 @@ jobs:
           cache: npm
 
       - name: 安装依赖
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       - name: 静态导出
         # next.config.ts 已配置 output: "export"，构建产物输出到 out/
         run: npx next build
+
+      - name: 关闭 Jekyll 处理
+        run: touch out/.nojekyll
 
       - name: 上传 Pages 构建产物
         uses: actions/upload-pages-artifact@v3
