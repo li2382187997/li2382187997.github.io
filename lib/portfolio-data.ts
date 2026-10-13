@@ -16,9 +16,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "mobing-shop",
+    label: "馍饼店",
+    kicker: "01 · 最新上架",
+    title: "《馍饼店》横屏经营小游戏",
+    summary: "独立设计的中国早点主题经营小游戏：接单、备料、制作、出餐全靠手上功夫，点开就能玩。",
+    role: "玩法设计、美术绘制、工程实现、测试与构建均由我独立完成",
+    aiBoundary: "AI 辅助讨论玩法点子与生成部分代码片段；我负责玩法与数值设计、Canvas 美术实现、模块拆分、40 个测试的编写与验收，以及构建脚本。",
+    process: ["从早点摊的真实动作里提炼玩法循环", "把核心逻辑做成浏览器与 Node 双端兼容", "为各系统补测试并写脚本打包单文件版"],
+    outcomes: ["13 道菜品 · 4 类厨具 · 16 位街坊顾客", "约 1800 行核心源码，零第三方依赖", "40 个 Node 测试全部通过", "构建出 149 KB 单文件 HTML，支持导入微信开发者工具"],
+    reflection: "这个项目让我第一次把“游戏手感”当作工程问题来解：手势判定的容错、生长进度的存档都比写页面难。回头看最值钱的决定，是让核心逻辑可以被自动化测试——改手势判定时敢随手重构。",
+    tech: ["Canvas", "JavaScript", "Node 内置测试", "单文件构建", "微信小游戏入口"],
+    media: [
+      { type: "image", src: "/projects/mobing/main.png", alt: "制作界面：三位顾客、订单气泡与三块案板" },
+      { type: "image", src: "/projects/mobing/farm.png", alt: "后院田园：种植与加工链" },
+      { type: "image", src: "/projects/mobing/menu.png", alt: "菜谱：13 道菜品图鉴" },
+      { type: "image", src: "/projects/mobing/day.png", alt: "当日结算" },
+    ],
+    external: { label: "在线试玩", href: "https://8fc1a47661f4472e88663adb937c2118.app.workbuddy.host/" },
+  },
+  {
     slug: "linux-ai-terminal",
     label: "Linux 终端",
-    kicker: "01 · 镇店作品",
+    kicker: "02 · 镇店作品",
     title: "AI 语音驱动的 Linux 嵌入式控制终端",
     summary: "用 12 天完成三层系统联动，把 AI 生成的代码真正接到开发板、串口、网络和触摸屏上。",
     role: "AI 协作开发 · 独立集成与验收",
@@ -46,7 +66,7 @@ export const projects: Project[] = [
   {
     slug: "beichen-internship",
     label: "实习成果册",
-    kicker: "02 · 实践记录",
+    kicker: "03 · 实践记录",
     title: "北辰青年线上实习成果",
     summary: "完成 4 次 AI 课程和 4 项工作任务，形成从内容研究到交互产品的主要交付。",
     role: "线上实习生 · 个人完成主要交付",
@@ -68,7 +88,7 @@ export const projects: Project[] = [
   {
     slug: "drawing-workbench",
     label: "绘画工作台",
-    kicker: "03 · 一日开发",
+    kicker: "04 · 一日开发",
     title: "我的绘画工作台",
     summary: "把自己的绘画资料管理习惯做成一个可在本地运行的轻量工具。",
     role: "需求提出、AI 协作开发、功能验收均由我独立完成",
@@ -86,7 +106,7 @@ export const projects: Project[] = [
   {
     slug: "personal-portfolio",
     label: "AI 作品集",
-    kicker: "04 · 成长档案",
+    kicker: "05 · 成长档案",
     title: "AI 个人作品集",
     summary: "把一次次 AI 实验、工作任务与复盘整理成可持续更新的成长记录。",
     role: "内容策划、结构整理与持续维护",

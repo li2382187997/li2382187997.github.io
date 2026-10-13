@@ -74,11 +74,14 @@ const extras: ExtraItem[] = [
 const isProject = (item: ActiveItem): item is Project => "slug" in item;
 
 const projectAssets = [
+  "/images/stall-layers/project-game.png",
   "/images/stall-layers/project-linux.png",
   "/images/stall-layers/project-beichen.png",
   "/images/stall-layers/project-drawing.png",
-  "/images/stall-layers/project-portfolio.png",
 ];
+
+// 摊位上展示的四件作品（《馍饼店》顶替原「AI 作品集」；后者详情页保留，可从快捷入口访问）
+const stallProjects = projects.filter((project) => project.slug !== "personal-portfolio");
 
 const extraAssets: Record<ExtraItem["id"], string> = {
   tools: "/images/stall-layers/skills-wall.png",
@@ -227,7 +230,7 @@ export default function Home() {
             <strong>小卷的创意小摊</strong>
           </div>
 
-          {projects.map((project, index) => (
+          {stallProjects.map((project, index) => (
             <button className={`stall-hotspot stall-object stall-hotspot--project-${index + 1}`} key={project.slug} type="button" aria-label={`查看${project.label}`} onClick={() => openProject(project, index)}>
               <Image className="stall-object__image" src={projectAssets[index]} alt="" fill sizes="20vw" />
               <span className="hotspot-dot" aria-hidden="true">＋</span>
@@ -277,6 +280,11 @@ export default function Home() {
                   {activeItem.slug === "linux-ai-terminal" && <LinuxMiniMap project={activeItem} />}
                   {activeItem.slug !== "linux-ai-terminal" && <ProjectCarousel project={activeItem} />}
                 </>
+              )}
+              {isProject(activeItem) && activeItem.external && (
+                <div className="dialog-actions">
+                  <a href={activeItem.external.href} target="_blank" rel="noreferrer">{activeItem.external.label} ↗</a>
+                </div>
               )}
 
               {!isProject(activeItem) && activeItem.id === "tools" && <SkillStack />}

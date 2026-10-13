@@ -65,7 +65,7 @@ export function LinuxMiniMap({ project }: { project: Project }) {
       onKeyDown={(event) => { if (event.key === "ArrowLeft") move(-1); if (event.key === "ArrowRight") move(1); }}
     >
       <header className="portal-heading">
-        <div><span>01 · LINUX TERMINAL</span><strong>{current.title}</strong></div>
+        <div><span>02 · LINUX TERMINAL</span><strong>{current.title}</strong></div>
         <p>{current.group} · {String(active + 1).padStart(2, "0")} / {linuxMedia.length}</p>
       </header>
 
@@ -216,7 +216,7 @@ function ImmersiveShowcase({ project }: { project: Project }) {
       onKeyDown={(event) => { if (event.key === "ArrowLeft") moveImage(-1); if (event.key === "ArrowRight") moveImage(1); }}
     >
       <header className="portal-heading">
-        <div><span>{project.slug === "personal-portfolio" ? "04 · AI PORTFOLIO" : "02 · BEICHEN ARCHIVE"}</span><strong>{current.title}</strong></div>
+        <div><span>{project.slug === "personal-portfolio" ? "05 · AI PORTFOLIO" : "03 · BEICHEN ARCHIVE"}</span><strong>{current.title}</strong></div>
         <p>{current.eyebrow} · {String(imageIndex + 1).padStart(2, "0")} / {String(Math.max(current.images.length, 1)).padStart(2, "0")}</p>
       </header>
 
