@@ -102,6 +102,7 @@ export const projects: Project[] = [
       { type: "image", src: "/projects/drawing/timer.png", alt: "绘画工作台计时界面" },
       { type: "image", src: "/projects/drawing/dark.png", alt: "绘画工作台深色模式界面" },
     ],
+    external: { label: "在线试玩", href: "https://024bb0c4d8d64695b7f852cf63aec87b.app.workbuddy.host/" },
   },
   {
     slug: "personal-portfolio",
@@ -115,7 +116,7 @@ export const projects: Project[] = [
     outcomes: ["集中展示 AI 实践与项目成果", "保留原始材料，方便继续深入查看", "形成可持续维护的个人成长档案"],
     reflection: "作品集不只是陈列结果，也是在训练我如何清晰、诚实地讲述自己做过的事。",
     tech: ["AI 应用实践", "内容结构", "作品整理", "复盘表达"],
-    external: { label: "前往飞书完整作品集", href: "https://my.feishu.cn/page/Vfg5mUs5hdKfw4au0j4cePO6n8b" },
+    external: { label: "前往飞书完整作品集", href: "https://my.feishu.cn/page/N4kGmOL8Pdr2V1aH19gcw9DAnKc" },
   },
 ];
 
