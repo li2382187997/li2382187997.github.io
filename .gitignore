@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+dist/
+
+# 平台与本地缓存
+.wrangler/
+.vinext/
+.sites-runtime/
+.openai/
+.codex-temp/
+
+# 系统与编辑器
+.DS_Store
+*.log
