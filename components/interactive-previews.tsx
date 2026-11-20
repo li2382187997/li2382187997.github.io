@@ -147,7 +147,7 @@ const beichenSlides: ShowcaseSlide[] = [
     proof: "13 章推文 · 10 张海报 · 阅读器上线",
     images: ["/projects/beichen/slides/recruit-cover.png", ...[2,3,4,5,6,7,8,9,10,11].map((n) => `/projects/beichen/slides/recruit-${String(n).padStart(2,"0")}.png`)],
     imageLabels: ["招新封面", ...[2,3,4,5,6,7,8,9,10,11].map((n) => `海报 ${String(n).padStart(2,"0")}`)],
-    link: { label: "打开在线阅读器", href: "https://75a637a723e04761bf468efa143362bd.app.workbuddy.link/" }, tone: "blue",
+    link: { label: "打开在线阅读器", href: "https://li2382187997.github.io/beichen-reader/" }, tone: "blue",
   },
   {
     id: "interview", number: "06", eyebrow: "W3 · 岗位与面试", title: "把求职准备做成可迭代流程",
