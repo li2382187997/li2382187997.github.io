@@ -33,7 +33,7 @@ export const projects: Project[] = [
       { type: "image", src: "/projects/mobing/menu.png", alt: "菜谱：13 道菜品图鉴" },
       { type: "image", src: "/projects/mobing/day.png", alt: "当日结算" },
     ],
-    external: { label: "在线试玩", href: "https://8fc1a47661f4472e88663adb937c2118.app.workbuddy.host/" },
+    external: { label: "在线试玩", href: "https://li2382187997.github.io/mobing-shop-demo//" },
   },
   {
     slug: "linux-ai-terminal",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
       { type: "image", src: "/projects/drawing/timer.png", alt: "绘画工作台计时界面" },
       { type: "image", src: "/projects/drawing/dark.png", alt: "绘画工作台深色模式界面" },
     ],
-    external: { label: "在线试玩", href: "https://024bb0c4d8d64695b7f852cf63aec87b.app.workbuddy.host/" },
+    external: { label: "在线试玩", href: "https://li2382187997.github.io/paint-workbench//" },
   },
   {
     slug: "personal-portfolio",
